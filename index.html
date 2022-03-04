@@ -1,90 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/media.css">
 </head>
 <body>
-    
-    <header>
 
-        <h1 id="titulo">Ruama<br>Costuras</h1>
-        <nav id="menu">
-            <a href="#servicos">Serviços</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-            <a href="#inscreva-se">Inscreva-se</a>
+    <header class="box-top">
+        <h1>Ruama's Sewing</h1>
+        <nav class="menu-site">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
         </nav>
-
     </header>
 
     <main>
+        <section class="newslatter">
 
-        <article id="inscreva-se">
-            <h2 id="purplename">Inscreva-se agora</h2>
-            <h2>na Newslatter</h2>
+            <article class="subscribe">
+                <h2><span>Inscreva-se</span> na Newslatter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta doloremque iure sapiente repudiandae, exercitationem assumenda, architecto ab, ex fugit facilis voluptate laboriosam cum consequuntur modi. Dolores, aliquid cupiditate. lorem
+                </p>
+                <form>
+                    <input class="input" type="text" placeholder="Name" name="name">
+                    <input class="input" type="email" placeholder="Email" name="email">
+                    <input class="input" type="submit" name="submite" value="Enviar">
+                </form>
+            </article>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti excepturi earum provident saepe. Accusantium minima voluptatem laboriosam dolores doloremque ullam sint totam </p>
+            <img class="main-image" src="components/images/Sewing-Machine-PNG-HD-Image.png" alt="foto-costura">
 
-            <form>
-            <input class="fieldform" type="text" name="name" id="name" placeholder="Nome">
-            <input class="fieldform" type="email" name="email" id="email" placeholder="E-mail">
-            <input id="enviar" class="fieldform" type="submit" value="Enviar >">
-            </form>
+        </section>
 
-        </article>
+        <div id="sub-title">
+            <h2>Serviços</h2>
+        </div>
+        
+        <section class="services" id="service00">
+                <img class="image-service" src="components/images/most-affordable-sewing-machine.jpg" alt="Imagem-costura">
+                <p class="description-image">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil corporis, provident consequuntur dolor est eligendi repudiandae laboriosam id atque explicabo sequi vitae eius inventore aliquid quasi sunt reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugit cum in voluptatum quaerat reprehenderit laborum sapiente, libero magnam laudantium at quod dolorum doloribus. Error rerum porro eaque quis libero.</p>
+        </section>
 
-        <aside>
-            <img id="image" src="components/images/costura.png" alt="purple-image">
-        </aside>
+        <section class="services" id="service01">
+            <p class="description-image">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil corporis, provident consequuntur dolor est eligendi repudiandae laboriosam id atque explicabo sequi vitae eius inventore aliquid quasi sunt reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente numquam deserunt dolorem facere nihil ab hic eaque sit tempora molestiae fugiat, ipsum distinctio architecto necessitatibus cumque nesciunt? Autem, veritatis velit.</p>
+            <img class="image-service" src="components/images/image.png" alt="Imagem-costura">
+        </section>
+
+        <section class="costumers">
+
+            <div id="sub-title">
+                <h2>Clientes</h2>
+            </div>
+
+            <div id="section-content-clients">
+
+                <div id="clients">
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                    
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                    <div class="box-client">
+                        <div class="client-profile">
+                            <img src="#" alt="client-image">
+                            <p>Nome do cliente</p>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate aliquid deleniti amet accusamus ducimus. Enim autem blanditiis doloribus, perspiciatis quo rem in perferendis est beatae voluptatem velit tempore, fugiat architecto.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
-    <div class="servicos" id="servicos">
-        <article class="conteudo-servicos">
-            
-            <div class="imagem-costura01">
-                <img src="components/images/most-affordable-sewing-machine.jpg" alt="maquina-cosuta">
-            </div>
-            
-            <div class="texto-servico">
-                <h1>Costura Personalizada</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus accusantium minima assumenda molestiae nihil corporis est ad molestias expedita impedit incidunt repudiandae nisi, rem exercitationem nemo autem reprehenderit! Veniam, reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eius exercitationem velit eum ipsam. Sit, laudantium ipsum. Fuga laborum deleniti assumenda ipsam quos eos eum vitae? Autem veniam a nobis?.</p>
-            </div>
-
-        </article>
-    </div>
-
-    <div class="servicos02" id="servicos">
-        <article class="conteudo-servicos">
-            
-            <div class="texto-servico">
-                <h1>Reparos</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus accusantium minima assumenda molestiae nihil corporis est ad molestias expedita impedit incidunt repudiandae nisi, rem exercitationem nemo autem reprehenderit! Veniam, reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eius exercitationem velit eum ipsam. Sit, laudantium ipsum. Fuga laborum deleniti assumenda ipsam quos eos eum vitae? Autem veniam a nobis?.</p>
-            </div>
-
-            <div class="imagem-costura02">
-                <img src="components/images/image.png" alt="maquina-cosuta">
-            </div>
-
-        </article>
-    </div>
-
-    <div class="footer" id="contato">
-        <div class="footer-texto">
-            Acompanhe nossas redes sociais abaixo!
-        </div>
-        <div class="icones">
-            <ul>
-                <li><a href="#"><img src="components/images/instagram_f_icon-icons.com_65485.png" alt="instagram"></a></li>
-                <li><a href="#"><img src="components/images/whatsapp-logo_icon-icons.com_57054.png"></a></li>
-            </ul>
-        </div>
-    <div>
+    <footer>
+        <p>Acesse nossas redes sociais</p>
+        <ul>
+            <li><a href="#">Insta</a></li>
+            <li><a href="#">Whatsapp</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
