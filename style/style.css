@@ -146,17 +146,44 @@ form{
     
 }
 #section-content-clients{
+    display: flex;
+    justify-content: center;
     padding: 45px 10px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.37);
 }
 
 #clients{
-    border: 1px solid black;
-    display: grid;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
 }
 
 
 .box-client{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
     max-width: 300px;
+    flex: 1 1 300px;
+    margin: 10px;
+}
+.client-profile > p {
+    color: black;
+    margin-left: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.client-profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.client-profile > img {
+    max-width: 70px;
+}
+.box-client > p{
+    max-width: 230px;
+    font-size: 0.8em;
+    color: black;
 }
