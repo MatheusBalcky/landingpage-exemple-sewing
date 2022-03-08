@@ -16,7 +16,6 @@
     --font-texto: 'Comfortaa', cursive, sans-serif;
     --shadow-box: 1px 1px 10px 1px rgba(0, 0, 0, 0.37);
 }
-
 a{
     display: block;
     text-decoration: none;
@@ -31,18 +30,18 @@ ul{
 
 
 
-
 body{
     background-color: var(--cor-background);
 }
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 20px 0px;
     background-color: var(--cor-principal);
     flex-wrap: wrap;
+    gap: 0px 500px;
 }
 header > h1{
     font-family: var(--font-display);
@@ -58,48 +57,28 @@ header a:hover{
 
 
 
-
+/* config dos inputs para a newslatter */
 .newslatter{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 45px 10px;
+    justify-content: center;
+    padding: 80px 10px;
 }
 .subscribe{
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
-    margin: 20px;
+    gap: 15px;
 }
 .subscribe > h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.465);
     font-size: 2.8em;
-    margin-bottom: 10px;
     max-width: 800px;
 }
 .subscribe > p {
     text-align: justify;
     max-width: 450px;
-    margin-bottom: 10px;
-}
-.main-image{
-    margin: 20px;
-    max-width: 450px;
-    transition: 0.5s ;
-    animation: float 5s ease-in-out infinite;
-}
-@keyframes float {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-15px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-.main-image:hover{
-    transform: scale(1.1);
 }
 form{
     display: flex;
@@ -108,10 +87,10 @@ form{
 .input{
     padding: 10px;
     max-width: 300px;
-    margin-bottom: 15px;
     border-radius: 10px;
     border: none;
     box-shadow: var(--shadow-box);
+    margin-bottom: 15px;
 }
 .input[type=submit] {
     background-color: var(--cor-principal);
@@ -138,6 +117,28 @@ form{
 
 }
 
+/* config da img principal */
+.main-image{
+    margin: 20px;
+    max-width: 450px;
+    transition: 0.5s ;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.main-image:hover{
+    transform: scale(1.1);
+}
+
 
 
 #sub-title{
@@ -151,13 +152,13 @@ form{
     padding: 10px 60px;
     border-radius: 10px 10px 0px 0px;
 }
-
 .services{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 50px 10px;
+    gap: 50px;
 }
 .services#service00{
     background-color: var(--cor-principal);
@@ -182,7 +183,6 @@ form{
 
 .costumers{
     background-color: var(--cor-principal);
-    
 }
 #section-content-clients{
     display: flex;
@@ -226,4 +226,56 @@ form{
     max-width: 230px;
     font-size: 0.8em;
     color: black;
+}
+
+#titleFaq{
+    display: flex;
+    justify-content: center;
+}
+#titleFaq h2{
+    padding: 10px 60px;
+    background-color: var(--cor-principal);
+    border-radius: 0px 0px 10px 10px;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+}
+.questions details{
+    background-color: white;
+    width: 750px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: var(--shadow-box);
+}
+.questions > details > summary, .questions > details > p{
+    padding: 10px;
+    color: black;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: var(--cor-principal);
+    flex-wrap: wrap;
+    gap: 0px 500px;
+}
+footer > p{
+    margin-bottom: 20px;
+}
+footer > ul > li > a{
+    padding: 0px;
+    margin-right: 20px;
 }
