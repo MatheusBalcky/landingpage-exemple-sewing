@@ -84,6 +84,22 @@ header a:hover{
 .main-image{
     margin: 20px;
     max-width: 450px;
+    transition: 0.5s ;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.main-image:hover{
+    transform: scale(1.1);
 }
 form{
     display: flex;
@@ -92,7 +108,7 @@ form{
 .input{
     padding: 10px;
     max-width: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 10px;
     border: none;
     box-shadow: var(--shadow-box);
@@ -102,6 +118,24 @@ form{
     max-width: 150px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.5s;
+}
+.input[type=submit]:hover{
+    transform: scale(1.1);
+    animation: buttonfloat 1s ease-in-out infinite;
+    box-shadow: 1px 2px 10px 1px rgb(255, 255, 255);
+}
+@keyframes buttonfloat {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
 }
 
 
@@ -123,7 +157,7 @@ form{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 45px 10px;
+    padding: 50px 10px;
 }
 .services#service00{
     background-color: var(--cor-principal);
@@ -131,15 +165,20 @@ form{
 }
 .image-service{
     max-width: 100%;
-    max-width: 450px;
+    max-width: 350px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.116);
+    transition: 0.5s;
+}
+.image-service:hover{
+    transform: scale(1.1);
 }
 .services .description-image{
     max-width: 500px;
     line-height: 1.6em;
     padding: 0px 10px;
 }
+
 
 .costumers{
     background-color: var(--cor-principal);
@@ -148,25 +187,26 @@ form{
 #section-content-clients{
     display: flex;
     justify-content: center;
-    padding: 45px 10px;
+    padding: 50px 10px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.37);
 }
-
 #clients{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 1100px;
 }
-
-
 .box-client{
     padding: 20px;
     border-radius: 10px;
     background-color: white;
     max-width: 300px;
     flex: 1 1 300px;
-    margin: 10px;
+    margin: 20px;
+    transition: 0.5s;
+}
+.box-client:hover{
+    transform: scale(1.1);
 }
 .client-profile > p {
     color: black;
