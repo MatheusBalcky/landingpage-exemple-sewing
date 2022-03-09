@@ -39,7 +39,14 @@
     }
 }
 
+@media (max-width: 757px){
+    #boxclient05, #boxclient04{
+        display: none;
+    }
+}
+
 @media (max-width: 422px){
     .menu-site{display: none;}
     .image-service{max-width: 250px;}
+    input{width: 10%;}
 }
