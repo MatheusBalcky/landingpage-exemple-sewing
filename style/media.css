@@ -48,5 +48,8 @@
 @media (max-width: 422px){
     .menu-site{display: none;}
     .image-service{max-width: 250px;}
-    input{width: 10%;}
+    .input{width: 250px;}
+    .subscribe > h2{
+        font-size: 2em;
+    }
 }
