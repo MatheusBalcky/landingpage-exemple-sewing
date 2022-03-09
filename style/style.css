@@ -21,6 +21,7 @@ a{
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 15px;
+    border: 1px dashed #593213;
 }
 ul{
     display: flex;
@@ -49,7 +50,7 @@ header > h1{
 }
 header a:hover{
     color: rgb(161, 161, 161);
-    border: 1px solid white;
+    border: 1px dashed white;
     border-radius: 15px;
     transition: 0.5s all;
 }
@@ -74,7 +75,6 @@ header a:hover{
 .subscribe > h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.465);
     font-size: 2.8em;
-    max-width: 800px;
 }
 .subscribe > p {
     text-align: justify;
@@ -91,6 +91,7 @@ form{
     border: none;
     box-shadow: var(--shadow-box);
     margin-bottom: 15px;
+    color: black;
 }
 .input[type=submit] {
     background-color: var(--cor-principal);
@@ -98,6 +99,7 @@ form{
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
+    color: white;
 }
 .input[type=submit]:hover{
     transform: scale(1.1);
@@ -200,8 +202,8 @@ form{
     padding: 20px;
     border-radius: 10px;
     background-color: white;
-    max-width: 300px;
-    flex: 1 1 300px;
+    max-width: 250px;
+    flex: 1 1 200px;
     margin: 20px;
     transition: 0.5s;
 }
@@ -233,6 +235,7 @@ form{
     justify-content: center;
 }
 #titleFaq h2{
+    text-align: center;
     padding: 10px 60px;
     background-color: var(--cor-principal);
     border-radius: 0px 0px 10px 10px;
@@ -242,16 +245,20 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-items: center;
     padding: 50px 10px;
 }
 .questions {
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px 0px;
+    justify-content: center;
+    align-items: center;
 }
 .questions details{
+    width: 80%;
     background-color: white;
-    width: 750px;
     padding: 15px;
     cursor: pointer;
     border-radius: 10px;
