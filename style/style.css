@@ -286,3 +286,6 @@ footer > ul > li > a{
     padding: 0px;
     margin-right: 20px;
 }
+footer > ul > li > a > img{
+    max-width: 20px;
+}
